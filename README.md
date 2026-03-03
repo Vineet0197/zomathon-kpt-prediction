@@ -2,7 +2,7 @@
 ## Smart KPT Prediction Enhancement System
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ### Problem
 **Kitchen Prep Time (KPT)** prediction inaccuracies cause:
@@ -38,7 +38,7 @@ A dual-component approach combining **hardware** (IoT) and **software** (algorit
 ### Installation
 
 ```bash
-git clone https://github.com/[your-username]/zomathon-kpt-prediction.git
+git clone https://github.com/Vineet0197/zomathon-kpt-prediction.git
 cd zomathon-kpt-prediction
 pip install -r requirements.txt
 ```
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 python kpt_analysis_visualization.py --output-dir ./results
 ```
 
-#### Option 2: Use Your Own Production Data 🔑
+#### Option 2: Use Your Own Production Data
 ```bash
 python kpt_analysis_visualization.py \
     --data-file /path/to/your/orders.csv \
@@ -68,12 +68,12 @@ The script is designed to work with **real Zomato production data**. Simply prov
 
 | Column | Type | Description | Required |
 |--------|------|-------------|----------|
-| `order_id` | string | Unique order identifier | ✅ |
-| `merchant_id` | string | Merchant/restaurant identifier | ✅ |
-| `order_time` | datetime | Order placement timestamp | ✅ |
-| `merchant_for_time` | datetime | Merchant FOR marking timestamp | ✅ |
-| `rider_arrival` | datetime | Rider arrival at merchant | ✅ |
-| `rider_pickup` | datetime | Rider pickup timestamp | ✅ |
+| `order_id` | string | Unique order identifier | True |
+| `merchant_id` | string | Merchant/restaurant identifier | True |
+| `order_time` | datetime | Order placement timestamp | True |
+| `merchant_for_time` | datetime | Merchant FOR marking timestamp | True |
+| `rider_arrival` | datetime | Rider arrival at merchant | True |
+| `rider_pickup` | datetime | Rider pickup timestamp | True |
 | `actual_food_ready` | datetime | Actual food ready time (ground truth) | Optional |
 | `actual_kpt_minutes` | float | Actual kitchen prep time | Optional |
 | `merchant_tier` | string | Tier1/Tier2/Tier3 classification | Optional |
@@ -216,19 +216,12 @@ matplotlib>=3.4.0
 
 ## Team
 
-**Team [Your Team Name]**
-- [Member 1] - [Role]
-- [Member 2] - [Role]
+**Team Quantum Coders**
+- Vineet Aggarwal - Team Leader
+- Shivani Aggarwal - Team Member
 
 ---
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
-
----
-
-## Acknowledgments
-
-- Zomato Engineering Team for the problem statement
-- OWASP for secure coding guidelines referenced in implementation
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
