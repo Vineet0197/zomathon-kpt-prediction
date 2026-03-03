@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-02-28T12:00:00.000Z" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram name="Smart Pickup Hub Architecture" id="architecture-diagram">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Smart Pickup Hub + Signal Reliability Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#E23744;" vertex="1" parent="1">
+          <mxGeometry x="284" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Hybrid Solution Architecture for KPT Prediction Enhancement" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#7F8C8D;" vertex="1" parent="1">
+          <mxGeometry x="334" y="55" width="500" height="25" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 1 Header -->
+        <mxCell id="layer1-header" value="LAYER 1: DATA CAPTURE (Edge Devices)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#E74C3C;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="300" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 1 Container -->
+        <mxCell id="layer1-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF9E7;strokeColor=#F39C12;strokeWidth=2;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="40" y="125" width="1090" height="150" as="geometry" />
+        </mxCell>
+        
+        <!-- IoT Device -->
+        <mxCell id="iot-device" value="&lt;b&gt;IoT Device&lt;/b&gt;&lt;br&gt;(Tier 1 &amp; 2 Merchants)&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• QR/NFC Scanner&lt;br&gt;• E-ink Display&lt;br&gt;• MEMS Microphone&lt;br&gt;• PIR Motion Sensor&lt;br&gt;• WiFi/BLE Module&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E74C3C;fontColor=#FFFFFF;strokeColor=#C0392B;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="145" width="160" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- Rider App -->
+        <mxCell id="rider-app" value="&lt;b&gt;Rider App&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• QR Scanner&lt;br&gt;• GPS Location&lt;br&gt;• Pickup Confirmation&lt;br&gt;• Arrival Timestamp&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9B59B6;fontColor=#FFFFFF;strokeColor=#8E44AD;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="145" width="160" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- Merchant App -->
+        <mxCell id="merchant-app" value="&lt;b&gt;Merchant App (Mx)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• FOR Marking&lt;br&gt;• Rush Hour Toggle&lt;br&gt;• Tier 3 QR Scan&lt;br&gt;• Order Management&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498DB;fontColor=#FFFFFF;strokeColor=#2980B9;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="480" y="145" width="160" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Signals from Layer 1 -->
+        <mxCell id="signal1" value="Device Scan&lt;br&gt;Timestamps" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#E74C3C;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="700" y="145" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="signal2" value="Ambient&lt;br&gt;Sensor Data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#E74C3C;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="145" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="signal3" value="Rider Arrival&lt;br&gt;&amp; Pickup Time" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#9B59B6;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="880" y="145" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="signal4" value="FOR Signal&lt;br&gt;&amp; Rush Status" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#3498DB;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="970" y="145" width="80" height="35" as="geometry" />
+        </mxCell>
+        
+        <!-- Data flow box -->
+        <mxCell id="data-flow" value="&lt;b&gt;Data Signals&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECF0F1;fontColor=#2C3E50;strokeColor=#BDC3C7;strokeWidth=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="700" y="185" width="370" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows from devices to data flow -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7F8C8D;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="iot-device" target="data-flow">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7F8C8D;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="rider-app" target="data-flow">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7F8C8D;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="merchant-app" target="data-flow">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 2 Header -->
+        <mxCell id="layer2-header" value="LAYER 2: SIGNAL RELIABILITY FRAMEWORK (Processing)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="350" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 2 Container -->
+        <mxCell id="layer2-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F8F5;strokeColor=#27AE60;strokeWidth=2;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="40" y="315" width="1090" height="160" as="geometry" />
+        </mxCell>
+        
+        <!-- Signal Cleaning -->
+        <mxCell id="signal-clean" value="&lt;b&gt;Signal Cleaning&lt;br&gt;Layer&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• Validation Rules&lt;br&gt;• Deduplication&lt;br&gt;• Anomaly Detection&lt;br&gt;• Outlier Flagging&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27AE60;fontColor=#FFFFFF;strokeColor=#1E8449;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="335" width="160" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Merchant Reliability -->
+        <mxCell id="merchant-reliability" value="&lt;b&gt;Merchant Reliability&lt;br&gt;Engine&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• Bias Detection&lt;br&gt;• Score Calculation&lt;br&gt;• Tier Assignment&lt;br&gt;• Dynamic Updates&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F39C12;fontColor=#FFFFFF;strokeColor=#D68910;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="335" width="160" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Kitchen Load -->
+        <mxCell id="kitchen-load" value="&lt;b&gt;Kitchen Load&lt;br&gt;Feature Generator&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• KBI Calculation&lt;br&gt;• Rush Detection&lt;br&gt;• Pattern Learning&lt;br&gt;• Non-Platform Orders&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E44AD;fontColor=#FFFFFF;strokeColor=#6C3483;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="480" y="335" width="160" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Rider Inferred KPT -->
+        <mxCell id="rider-inferred" value="&lt;b&gt;Rider-Inferred&lt;br&gt;KPT Calculator&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• Bias-Resistant Signal&lt;br&gt;• max(pickup, arrival)&lt;br&gt;&amp;nbsp; - order_time&lt;br&gt;• All Tiers Coverage&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ABC9C;fontColor=#FFFFFF;strokeColor=#148F77;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="680" y="335" width="160" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Formulas Box -->
+        <mxCell id="formulas" value="&lt;b&gt;Key Formulas&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot; face=&quot;Courier New&quot;&gt;Reliability = 1 - (0.4×Bias + 0.35×Wait + 0.25×CV)&lt;br&gt;&lt;br&gt;Rider_KPT = max(pickup, arrival) - order_time&lt;br&gt;&lt;br&gt;KBI = α×Ambient + β×Frequency + γ×Historical&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;fontColor=#2C3E50;strokeColor=#E74C3C;strokeWidth=1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="880" y="335" width="230" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow from Layer 1 to Layer 2 -->
+        <mxCell id="arrow-l1-l2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2C3E50;strokeWidth=3;endArrow=classic;" edge="1" parent="1" source="data-flow" target="signal-clean">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="885" y="280" />
+              <mxPoint x="160" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Layer 3 Header -->
+        <mxCell id="layer3-header" value="LAYER 3: PREDICTION &amp; OUTPUT" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#2C3E50;" vertex="1" parent="1">
+          <mxGeometry x="40" y="490" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 3 Container -->
+        <mxCell id="layer3-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#3498DB;strokeWidth=2;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="40" y="515" width="1090" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Weighted Signal Fusion -->
+        <mxCell id="fusion" value="&lt;b&gt;Weighted Signal Fusion&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;Enhanced_KPT = W₁×Device + W₂×Rider + W₃×Merchant + W₄×Historical&lt;br&gt;&lt;br&gt;Weights vary by reliability tier and device availability&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2C3E50;fontColor=#FFFFFF;strokeColor=#1A252F;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="535" width="300" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Real-time Correction -->
+        <mxCell id="realtime" value="&lt;b&gt;Real-time&lt;br&gt;Correction&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• KBI Adjustment&lt;br&gt;• Rush Hour Factor&lt;br&gt;• Live Updates&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5D6D7E;fontColor=#FFFFFF;strokeColor=#2C3E50;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="535" width="120" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- ETA Engine -->
+        <mxCell id="eta-engine" value="&lt;b&gt;ETA Engine&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• Rider Dispatch&lt;br&gt;• Route Planning&lt;br&gt;• Customer ETA&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ABC9C;fontColor=#FFFFFF;strokeColor=#148F77;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="580" y="535" width="120" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Customer App -->
+        <mxCell id="customer-app" value="&lt;b&gt;Customer App&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• Accurate ETA&lt;br&gt;• Live Tracking&lt;br&gt;• Status Updates&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498DB;fontColor=#FFFFFF;strokeColor=#2980B9;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="535" width="120" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Analytics -->
+        <mxCell id="analytics" value="&lt;b&gt;Analytics &amp;&lt;br&gt;Monitoring&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font size=&quot;1&quot;&gt;• Performance Metrics&lt;br&gt;• Model Training&lt;br&gt;• Dashboards&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E74C3C;fontColor=#FFFFFF;strokeColor=#C0392B;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="900" y="535" width="120" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows in Layer 3 -->
+        <mxCell id="arrow-fusion-rt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7F8C8D;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="fusion" target="realtime">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-rt-eta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7F8C8D;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="realtime" target="eta-engine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-eta-cust" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7F8C8D;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="eta-engine" target="customer-app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-fusion-analytics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7F8C8D;strokeWidth=2;endArrow=classic;dashed=1;" edge="1" parent="1" source="fusion" target="analytics">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="670" />
+              <mxPoint x="960" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Arrows from Layer 2 to Layer 3 -->
+        <mxCell id="arrow-l2-fusion1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#27AE60;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="signal-clean" target="fusion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-l2-fusion2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#F39C12;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="merchant-reliability" target="fusion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-l2-fusion3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#8E44AD;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="kitchen-load" target="realtime">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow-l2-fusion4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1ABC9C;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="rider-inferred" target="fusion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BDC3C7;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="500" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="&lt;b&gt;Legend&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="50" y="705" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E74C3C;strokeColor=#C0392B;" vertex="1" parent="1">
+          <mxGeometry x="50" y="730" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1-text" value="Hardware/IoT" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="75" y="727" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=#1E8449;" vertex="1" parent="1">
+          <mxGeometry x="150" y="730" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2-text" value="Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="175" y="727" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2C3E50;strokeColor=#1A252F;" vertex="1" parent="1">
+          <mxGeometry x="240" y="730" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3-text" value="Core Algorithm" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="265" y="727" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498DB;strokeColor=#2980B9;" vertex="1" parent="1">
+          <mxGeometry x="350" y="730" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend4-text" value="Output/Apps" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="375" y="727" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F39C12;strokeColor=#D68910;" vertex="1" parent="1">
+          <mxGeometry x="450" y="730" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend5-text" value="Scoring" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="475" y="727" width="50" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Results Box -->
+        <mxCell id="results-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#27AE60;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="700" width="570" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="results-title" value="&lt;b&gt;Simulation Results&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="570" y="705" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="result1" value="&lt;b&gt;↓53.7%&lt;/b&gt;&lt;br&gt;Wait Time" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="570" y="725" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="result2" value="&lt;b&gt;↓33.8%&lt;/b&gt;&lt;br&gt;P50 Error" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="670" y="725" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="result3" value="&lt;b&gt;↓39.4%&lt;/b&gt;&lt;br&gt;P90 Error" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="770" y="725" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="result4" value="&lt;b&gt;↑13.1%&lt;/b&gt;&lt;br&gt;On-Time" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="870" y="725" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="result5" value="&lt;b&gt;~1 day&lt;/b&gt;&lt;br&gt;ROI Breakeven" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="970" y="725" width="100" height="45" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
